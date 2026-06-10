@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varshitha Reddy Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#">Portfolio</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#achievements">Achievements</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<section id="home" class="container text-center pt-5 mt-5">
+
+    <img src="varsh.jpeg" class="img-circle" width="200px" height="250px" alt="Profile Picture">
+
+    <h1 class="mt-3">Varshitha Reddy</h1>
+
+    <h4>Computer Science Student</h4>
+
+    <p>
+        Passionate about Web Development, Java Programming,
+        and Software Development.
+    </p>
+<div class="d-flex justify-content-center gap-3">
+    <a href="resume.pdf" class="btn btn-primary mt-2">
+        Download Resume
+    </a>
+
+    <button class="btn btn-dark mt-3" onclick="toggleTheme()">
+    Toggle Dark Mode
+    </button>
+</div>
+</section>
+
+<section id="about" class="container py-5">
+
+    <h2 class="text-center mb-4">About Me</h2>
+
+    <div class="card">
+
+        <div class="card-body">
+
+            <h4>Educational Details</h4>
+
+            <p>
+                B.Tech in Computer Science and Engineering
+            </p>
+
+            <h4>Career Objective</h4>
+
+            <p>
+                To secure a challenging position where I can
+                apply my technical skills and continuously learn
+                new technologies.
+            </p>
+
+            <h4>Personal Interests</h4>
+
+            <p>
+                Web Development, Travelling, Photography,
+                Reading and Technology.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="skills" class="container py-5">
+
+    <h2 class="text-center mb-4">Skills</h2>
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <div class="card p-3">
+
+                <h5>HTML - 90%</h5>
+
+                <div class="progress">
+                    <div class="progress-bar bg-success" style="width:90%">
+                        90%
+                    </div>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="card p-3">
+
+                <h5>CSS - 85%</h5>
+
+                <div class="progress">
+                    <div class="progress-bar bg-info" style="width:85%">
+                        85%
+                    </div>
+                </div>
+
+            </div><br>
+
+            <div class="card p-3">
+
+                <h5>Bootstrap - 80%</h5>
+
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width:80%">
+                        80%
+                    </div>
+                </div>
+
+            </div>
+        
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="card p-3">
+
+                <h5>Java - 85%</h5>
+
+                <div class="progress">
+                    <div class="progress-bar bg-primary" style="width:85%">
+                        85%
+                    </div>
+                </div>
+
+            </div><br>
+
+            <div class="card p-3">
+
+                <h5>Python - 80%</h5>
+
+                <div class="progress">
+                    <div class="progress-bar bg-danger" style="width:80%">
+                        80%
+                    </div>
+                </div>
+
+            </div><br>
+
+            <div class="card p-3">
+
+                <h5>JavaScript - 75%</h5>
+
+                <div class="progress">
+                    <div class="progress-bar bg-dark" style="width:75%">
+                        75%
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects" class="container py-5">
+
+    <h2 class="text-center mb-4">Projects</h2>
+
+    <div class="row">
+
+        <div class="col-md-6 mb-3">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h4>Student Management Portal</h4>
+
+                    <p>
+                        Responsive web application for managing
+                        student records.
+                    </p>
+
+                    <p>HTML, CSS, Bootstrap</p>
+
+                    <button class="btn btn-primary" onclick="viewProject('Student Management Portal')" toggle="modal" data-bs-target="#projectModal">
+    View Project
+</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6 mb-4">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h4>Online Course Registration Portal</h4>
+
+                    <p>
+                        Web application for course registration
+                        and management.
+                    </p>
+
+                    <p>HTML, CSS, Bootstrap</p>
+                    <button class="btn btn-primary" onclick="viewProject('Online Course Registration Portal')" >
+    View Project
+</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6 mb-4">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h4>Hospital Management System</h4>
+
+                    <p>
+                        Healthcare application for managing
+                        patients and appointments.
+                    </p>
+
+                    <p>Java, MySQL</p>
+<button class="btn btn-primary" onclick="viewProject('Hospital Management System')" >
+    View Project
+</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6 mb-4">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h4>Network Intrusion Detection System</h4>
+
+                    <p>
+                        Machine Learning project using KDD99 dataset.
+                    </p>
+
+                    <p>Python, Machine Learning</p>
+                    <button class="btn btn-primary" onclick="viewProject('Network Intrusion Detection System')">
+    View Project
+</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="container py-3">
+    <div class="alert alert-info text-center">
+        <strong>Recently Viewed Project:</strong>
+        <span id="recentProject">None</span>
+    </div>
+</section>
+
+<section id="achievements" class="container py-5">
+
+    <h2 class="text-center mb-4">Achievements</h2>
+
+    <div class="row">
+
+        <div class="col-md-3 mb-3">
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5>Certification</h5>
+                    <ul>
+                        <li>Java Programming-Redhat</li>
+                        <li>Full stack development-LinkedIn</li>
+                        <li>Networking basics-Cisco</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-3 mb-3">
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5>Workshop</h5>
+                    <p>AWS Cloud & DevOps</p>
+                    <ul>
+                        <li>Cloud Computing-IEEE Summit</li>
+                        <li>Devops-IEEE Summit</li>
+                        <li>Drone workshop</li>
+                        </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-3 mb-3">
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5>Internship</h5>
+                    <ul>
+                        <li>Juniper Networking virtual internship</li>
+                        <li>Full stack Development</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-3 mb-3">
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5>Award</h5>
+                    <ul>
+                        <li>Academic Excellence</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="container py-5">
+
+    <h2 class="text-center mb-4">Contact Me</h2>
+
+    <form>
+
+        <div class="mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Name" required>
+        </div>
+
+        <div class="mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Email" required>
+        </div>
+
+        <div class="mb-3">
+            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+        </div>
+
+        <div class="mb-3">
+            <textarea class="form-control" id="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+
+        <button type="button" class="btn btn-primary"
+onclick="alert('Clicked')">
+    Send Message
+</button>
+    </form>
+
+</section>
+
+<div class="modal fade" id="projectModal">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5>Student Management Portal</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                Responsive web application developed using
+                HTML, CSS and Bootstrap.
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="bg-dark text-white text-center p-3">
+
+    <p>© 2026 Varshitha Reddy Portfolio</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
